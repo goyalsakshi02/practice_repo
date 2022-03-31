@@ -43,7 +43,9 @@ function sayThanks(name) {
 
 sayThanks('Cole'); 
 ```
-
+#### Output
+> - Thank you for your purchase Cole!.
+  - We appreciate your business.
 
 
 
