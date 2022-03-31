@@ -46,7 +46,33 @@ sayThanks('Cole');
 #### Output
 > - Thank you for your purchase Cole!.
    - We appreciate your business.
-
+### Default Parameters 
+In ES6 we can use default parameters. Allow parameters to have a predetermined value in case there is no argument passed into the function.
+#### For Example
+``` 
+function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+ 
+greeting('Nick')
+greeting()
+```
+>  - Hello, Nick!
+   - Hello, stranger!
+### Return 
+The return keyword is powerful because it allows functions to produce an output. We can then save the output to a variable for later use.
+### For Example
+```
+function rectangleArea(width, height) {
+  if (width < 0 || height < 0) {
+    return 'You need positive integers to calculate area!';
+  }
+  return width * height;
+}
+rectangleArea(3 , 4)
+```
+#### Output 
+> 12
 
 
 
