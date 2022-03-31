@@ -100,7 +100,7 @@ const calculations = function(width , height) {
 } 
 ```
 ### Arrow Functions 
-In ES6 a shorter way to write a function by using a **fat arrow () =>** . It remove the need to type the keyword function.
+In ES6 a shorter way to write a function by using a <Mark>fat arrow () =></Mark> . It remove the need to type the keyword function.
 #### For Exmaple
 ```
 const rectangleArea = (width, height) => {
