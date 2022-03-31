@@ -27,9 +27,9 @@ sayThanks()
 sayThanks() 
 ```
 #### Output
-> Thank you for your purchase! We appreciate your business.
-Thank you for your purchase! We appreciate your business.
-Thank you for your purchase! We appreciate your business.
+> - Thank you for your purchase! We appreciate your business.
+- Thank you for your purchase! We appreciate your business.
+- Thank you for your purchase! We appreciate your business.
 
 
 
