@@ -73,7 +73,41 @@ rectangleArea(3 , 4)
 ```
 #### Output 
 > 12
-
+### Helper Function
+Using a return value of a function inside a another function are reffered to as helper function .
+#### For Example
+If we wanted to define a function that converts the temperature from Celsius to Fahrenheit, we could write two functions like:
+```
+function multiplyByNineFifths(number) {
+  return number * (9/5);
+};
+ 
+function getFahrenheit(celsius) {
+  return multiplyByNineFifths(celsius) + 32;
+};
+ 
+getFahrenheit(15);
+```
+### Output 
+> 59
+### Function Expressions 
+#### To define a function inside an expression 
+In a function expression, the function name is usually omitted. A function with no name is called an anonymous function. A function expression is often stored in a variable in order to refer to it.
+```
+const calculations = function(width , height) {
+    const area = width * height;
+    return area;
+} 
+```
+### Arrow Functions 
+In ES6 a shorter way to write a function by using a **fat arrow () =>** . It remove the need to type the keyword function.
+#### For Exmaple
+```
+const rectangleArea = (width, height) => {
+  let area = width * height;
+  return area;
+}; // function returns area 
+```
 
 
 
