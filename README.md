@@ -36,11 +36,14 @@ Functions can take inputs and use the inputs to perform a task. While declaring 
 #### Arguments
 When calling a function that has parameters, we specify the values in the parentheses that follow the function name. The values that are passed to the function when it is called are called arguments. Arguments can be passed to the function as values or variables.
 ### For Example
-``` function sayThanks(name) {
+```
+function sayThanks(name) {
   console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
 }
 
-sayThanks('Cole'); ```
+sayThanks('Cole'); 
+```
+
 
 
 
