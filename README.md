@@ -1,4 +1,11 @@
 # Java Script Learning Module 
+## Variables
+- Variables are stored in a memory .
+- Variables hold reusable data in a program and associate it with a name.
+There are three types of variables:-
+- ** var **   : Used in the previous versions of ES6.
+- ** let **   : let is the preferred way to declare a variable when it can be reassigned
+- ** const ** : It is the preferred way to declare a variable with a constant value.
 ## Functons 
 ### Definition of Funtion 
  A function is a reusable block of code that groups together a sequence of statements to perform a specific task.
@@ -108,7 +115,14 @@ const rectangleArea = (width, height) => {
   return area;
 }; // function returns area 
 ```
-
+Refactoring the other function to :
+```
+const squareNum = num => num * num;
+```
+Changes that follows in the above code are:
+-The parentheses around num have been removed, since it has a single parameter.
+-The curly braces { } have been removed since the function consists of a single-line block.
+-The return keyword has been removed since the function consists of a single-line block.
 
 
 
