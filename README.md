@@ -26,7 +26,8 @@ greetWorld(); // Output: Hello, World
 ### Calling a Function 
 A function declaration does not ask the code inside the function body to run,  it just declares the existence of the function.The code inside a function body runs, or executes, only when the function is called. one can call function as many times it needed. 
 #### For Example 
-``` function sayThanks() {
+``` 
+function sayThanks() {
   console.log('Thank you for your purchase! We appreciate your business.')
 }
 sayThanks()
