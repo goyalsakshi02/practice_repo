@@ -6,6 +6,18 @@ There are three types of variables:-
 - ** var **   : Used in the previous versions of ES6.
 - ** let **   : let is the preferred way to declare a variable when it can be reassigned
 - ** const ** : It is the preferred way to declare a variable with a constant value.
+```
+const y = 10
+console.log(y) // 10
+y = 20 
+console.log(y) // 10
+```
+```
+let x = 10
+console.log(x) // 10
+x = 20 
+console.log(x) // 20
+```
 ## Functons 
 ### Definition of Funtion 
  A function is a reusable block of code that groups together a sequence of statements to perform a specific task.
@@ -54,6 +66,7 @@ sayThanks('Cole');
 #### Output
 - Thank you for your purchase Cole!.
 - We appreciate your business.
+
 ### Default Parameters 
 In ES6 we can use default parameters. Allow parameters to have a predetermined value in case there is no argument passed into the function.
 #### For Example
@@ -81,6 +94,19 @@ rectangleArea(3 , 4)
 ```
 #### Output 
 > 12
+#### Detailed Example 
+```
+function convertString(word) {
+    let part = word.slice(1)
+    let firstLetter = word[0].toUpperCase()
+    console.log(`${firstLetter}${part}` )
+}
+let word = 'i love dog'
+const outPrint = convertString(word)
+console.log(outPrint)
+```
+#### Output
+I love dog
 ### Helper Function
 Using a return value of a function inside a another function are reffered to as helper function .
 #### For Example
