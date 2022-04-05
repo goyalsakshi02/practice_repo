@@ -156,6 +156,7 @@ return reversedNum
 }
 console.log(reverseNumFunc())
 ```
+#### Example 3
 ```
 const noOfVowels = string => {
   let vowels = 'aAeEiIoOuU'
