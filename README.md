@@ -215,8 +215,9 @@ the carName variable referred to as Function Scope
 function myFunction() {
 // code here can also use carName
 }
-```
-the global variable can be accesses anywhere in the code
+  ```
+
+  the global variable can be accesses anywhere in the code.
 
 
 
