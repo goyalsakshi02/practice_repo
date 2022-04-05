@@ -188,6 +188,36 @@ Changes that follows in the above code are:
 - The curly braces { } have been removed since the function consists of a single-line block.
 - The return keyword has been removed since the function consists of a single-line block.
 ## Scope
+Scope determines the accessibility (visibility) of variables.
+
+JavaScript has 3 types of scope:
+
+  Block scope : Variables declared inside a { } block cannot be accessed from outside the block
+  ```
+  const bird = {
+    let Bird1 = 'Sparrow'
+  }
+  ```
+  The bird variable inside a block is referred to as block scope
+  - Function scope : Variables defined inside a function are not accessible from outside the function.
+  
+  ```
+  function myFunction() {
+    var carName = "Volvo";   // Function Scope
+  }
+  ```
+the carName variable referred to as Function Scope
+  - Global scope : A variable declared outside a function, becomes GLOBAL
+  ```
+  let carName = "Volvo";
+// code here can use carName
+
+function myFunction() {
+// code here can also use carName
+}
+```
+the global variable can be accesses anywhere in the code
+
 
 
 
