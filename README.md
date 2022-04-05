@@ -192,7 +192,7 @@ Scope determines the accessibility (visibility) of variables.
 
 JavaScript has 3 types of scope:
 
-  Block scope : Variables declared inside a { } block cannot be accessed from outside the block
+  - Block scope : Variables declared inside a { } block cannot be accessed from outside the block
   ```
   const bird = {
     let Bird1 = 'Sparrow'
