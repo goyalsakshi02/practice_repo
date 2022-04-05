@@ -142,14 +142,52 @@ const rectangleArea = (width, height) => {
   return area;
 }; // function returns area 
 ```
+### Example 2
+```
+const reverseNumFunc = () => {
+let num = 1234
+let reversedNum = 0
+while (num != 0 ) {
+    digit = num % 10
+    reversedNum = reversedNum * 10 + digit
+    num = Math.floor(num / 10) 
+}
+return reversedNum
+}
+console.log(reverseNumFunc())
+```
+```
+const noOfVowels = string => {
+  let vowels = 'aAeEiIoOuU'
+  let vowelCount = 0
+  for (let i=0 ; i< string.length ; i++){
+    
+    for (let j=0 ; j< vowels.length ; j++){
+      
+      if(string[i] === vowels[j]){
+        vowelCount += 1
+      }
+    }
+  }
+  return vowelCount
+}
+
+console.log(noOfVowels('Dont let fear interfere')) // output : 8
+```
 Refactoring the other function to :
 ```
 const squareNum = num => num * num;
+```
+```
+const cubeOfnum = num => num * num *num ;
+console.log(cubeOfNum(8)) // output : 512
 ```
 Changes that follows in the above code are:
 - The parentheses around num have been removed, since it has a single parameter.
 - The curly braces { } have been removed since the function consists of a single-line block.
 - The return keyword has been removed since the function consists of a single-line block.
+## Scope
+
 
 
 
