@@ -94,7 +94,7 @@ rectangleArea(3 , 4)
 ```
 #### Output 
 > 12
-#### Detailed Example 
+#### Detailed Example (capitalize first letter of the string)
 ```
 function convertString(word) {
     let part = word.slice(1)
