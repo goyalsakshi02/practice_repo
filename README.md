@@ -252,46 +252,46 @@ let fruit = fruits[fruits.length - 1];
 console.log(fruit) // output : 3
 ```
 - Push and Pop : using these properties can easily remove and insert array elements 
-  Example for push : 
-  ```
-  const chores = ['wash dishes', 'do laundry', 'take out trash'];
-  chores.push('item3', 'item4')
-  console.log(chores) // output :  ['wash dishes', 'do laundry', 'take out trash', 'item3','item4']
-  ```
-  Example for Pop :It only remove the last element of the array 
-  ```
-  const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
-  chores.pop()
-  console.log(chores) // Output : ['wash dishes', 'do laundry', 'take out trash', 'cook dinner']
-  ```
-  - More inbuilt methods : shift, unshift, slice, indexOff
-   ```
-  const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+Example for push : 
+```
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+chores.push('item3', 'item4')
+console.log(chores) // output :  ['wash dishes', 'do laundry', 'take out trash', 'item3''item4']
+```
+Example for Pop :It only remove the last element of the array 
+```
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor']
+chores.pop()
+console.log(chores) // Output : ['wash dishes', 'do laundry', 'take out trash', 'cook dinner']
+```
+- More inbuilt methods : shift, unshift, slice, indexOff
+```
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
 
-  groceryList.shift();
+groceryList.shift();
 
-  console.log(groceryList);
+console.log(groceryList);
 
-  groceryList.unshift('popcorn');
+groceryList.unshift('popcorn');
 
-  console.log(groceryList);
+console.log(groceryList);
 
-  console.log(groceryList.slice(1, 4));
+console.log(groceryList.slice(1, 4));
 
-  console.log(groceryList);
+console.log(groceryList);
 
-  const pastaIndex = groceryList.indexOf('pasta');
+const pastaIndex = groceryList.indexOf('pasta');
 
-  console.log(pastaIndex);
-  ```
+console.log(pastaIndex);
+```
 #### Output
- > ['bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
+> ['bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
   
-   ['popcorn','bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
+  ['popcorn','bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
 
-   [ 'bananas','coffee beans', 'brown rice']
+  [ 'bananas','coffee beans', 'brown rice']
 
-   4
+  4
       
 
 - Looping Array Element : Using for loop in an array.
