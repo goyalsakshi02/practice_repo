@@ -366,9 +366,9 @@ console.log(smallNumbers)
 
 ```
 #### Output
->
-  HelloWorld
+> HelloWorld
   [ 1, 2, 3, 4, 5 ]  
+
 
 
 > The .filter() : this method returns an array of elements after filtering out certain elements from the original array.The callback function for the .filter() method should return ***true*** or ***false*** depending on the element that is passed to it. The elements that cause the callback function to return ***true*** are added to the new array.
