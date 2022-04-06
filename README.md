@@ -307,11 +307,13 @@ text += "</ul>";
 console.log(text) 
 ```
 #### Output
->  Banana
-   Orange
-   Apple
-   Mango
+>  
+   - Banana
+   - Orange
+   - Apple
+   - Mango
 #### Iterators
+
 
 
     
