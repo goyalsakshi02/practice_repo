@@ -258,7 +258,7 @@ const chores = ['wash dishes', 'do laundry', 'take out trash'];
 chores.push('item3', 'item4')
 console.log(chores) // output :  ['wash dishes', 'do laundry', 'take out trash', 'item3''item4']
 ```
-Example for Pop :It only remove the last element of the array 
+Example for Pop : It only remove the last element of the array 
 ```
 const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor']
 chores.pop()
@@ -312,7 +312,227 @@ console.log(text)
    - Orange
    - Apple
    - Mango
-#### Iterators
+### Iterators
+Iterators are methods called on arrays to manipulate elements and return values.
+#### Methods of Iterators 
+There are different methods to accessing array elements 
+- .ForEach() : It will execute the same code for each element. It takes an argument of    callback function. A callback function is a function passed as an argument into another function. this method loops the array and execute the callback function for each element.
+
+```
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+fruits.forEach(fruits => console.log(`I want to eat a ${fruits}.`))
+```
+#### output
+>
+ I want to eat a mango.
+ I want to eat a papaya.
+ I want to eat a pineapple.
+ I want to eat a apple.
+
+- The .map() -  When .map() is called on an array, it takes an argument of a callback function and returns a new array. The only difference in .forEach() and .map() method is that map function returns a new array.
+
+```
+const numbers = [1, 2, 3, 4, 5]; 
+ 
+const bigNumbers = numbers.map(number => {
+  return number * 10;
+});
+console.log(numbers)
+console.log(bigNumbers)
+
+```
+#### Output 
+> 
+   [1, 2, 3, 4, 5]
+   [10, 20, 30, 40, 50]
+
+#### Example 
+```
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+const secretMessage = animals.map(animal => animal[0]);
+
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+const smallNumbers = bigNumbers.map(num => num/100);
+
+console.log(smallNumbers)
+
+```
+#### Output
+>
+  HelloWorld
+  [ 1, 2, 3, 4, 5 ]  
+
+- The .filter() : this method returns an array of elements after filtering out certain elements from the original array.The callback function for the .filter() method should return ***true*** or ***false*** depending on the element that is passed to it. The elements that cause the callback function to return ***true*** are added to the new array.
+
+#### For Example
+```
+const words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
+ 
+const shortWords = words.filter(word => {
+  return word.length < 6;
+});
+console.log(shortWords)
+
+```
+#### Output 
+>
+  ['chair', 'music', 'brick', 'pen', 'door']
+
+#### Example 2
+```
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbers = randomNumbers.filter(num => {   
+   return num < 250;
+ })
+console.log(smallNumbers)
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+const longFavoriteWords = favoriteWords.filter(word => {
+  return word.length > 7
+})
+console.log(longFavoriteWords)
+
+```
+#### Output
+>
+   [200, 3.14, 7, 13,]
+   [ 'nostalgia', 'hyperbole', 'esoteric' ]
+
+- The .findIndexed() : It will return the index of the first element that evaluates to true in the callback function.   
+
+#### For example 
+```
+const jumbledNums = [123, 25, 78, 5, 9]; 
+ 
+const lessThanTen = jumbledNums.findIndex(num => {
+  return num < 10;
+});
+console.log(lessThanTen) // Output: 3 
+console.log(jumbledNums[3]) // Output: 5
+
+```
+#### Example - 2
+
+```
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(animal => {
+  return animal === 'elephant';
+});
+console.log(foundAnimal)
+
+const startsWithS = animals.findIndex(animal => {
+  return animal[0] === 's' ? true : false;
+});
+console.log(startsWithS)
+
+```
+#### Output 
+> 
+  - 7
+  - 3
+
+- The .reduce() : The .reduce() method returns a single value after iterating through the elements of an array, thereby reducing the array.
+
+### Example 
+```
+const numbers = [1, 2, 4, 10];
+ 
+const summedNums = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue
+})
+ 
+console.log(summedNums) // output : Output: 17
+
+```
+### Example - 2
+```
+const newNumbers = [1, 3, 5, 7];
+
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ', accumulator);
+  console.log('The value of currentValue: ', currentValue);
+  return accumulator + currentValue;
+});
+
+console.log(newSum);
+
+```
+#### Output
+>
+  - The value of accumulator:  1
+  - The value of currentValue: 3
+  - The value of accumulator:  4
+  - The value of currentValue: 5
+  - The value of accumulator:  9
+  - The value of currentValue: 7
+  - 16
+
+- The .sum() : This method test wether at least one element in the array passes the test implemented by the provided function.
+```
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+console.log(words.some(word => {
+  return word.length < 6;
+}));
+const interestingWords = words.filter((word) => {return word.length > 5});
+
+console.log(interestingWords.every((word) => {return word.length > 5}));
+```
+### Output
+>
+  true
+  true
+
+### Some common examples 
+```
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "N");
+
+console.log(word)
+
+// Choose a method that will return a new array
+
+const smallerNums = nums.map(num => num - 5);
+const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
+
+const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+//  Choose a method that will return undefined
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
+
+// Choose a method that will return a new array
+const longCities = cities.filter(city => city.length > 7);
+
+nums.some(num => num < 0) // Choose a method that will return a boolean value
+```
+
+#### Output
+>
+  - Have you visited Orlando?
+  - Have you visited Dubai?
+  - Have you visited Edinburgh?
+  - Have you visited Chennai?
+  - Have you visited Accra?
+  - Have you visited Denver?
+  - Have you visited Eskisehir?
+  - Have you visited Medellin?
+  - Have you visited Yokohama?
+  - MODECADEMY
+
+
+
+
+
+ 
+
+
 
 
 
