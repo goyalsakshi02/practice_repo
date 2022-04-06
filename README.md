@@ -314,8 +314,10 @@ console.log(text)
    - Mango
 ### Iterators
 Iterators are methods called on arrays to manipulate elements and return values.
+
 #### Methods of Iterators 
 There are different methods to accessing array elements 
+
 > .ForEach() : It will execute the same code for each element. It takes an argument of    callback function. A callback function is a function passed as an argument into another function. this method loops the array and execute the callback function for each element.
 
 ```
@@ -329,6 +331,7 @@ fruits.forEach(fruits => console.log(`I want to eat a ${fruits}.`))
  I want to eat a papaya.
  I want to eat a pineapple.
  I want to eat a apple.
+
 
 > The .map() -  When .map() is called on an array, it takes an argument of a callback function and returns a new array. The only difference in .forEach() and .map() method is that map function returns a new array.
 
@@ -366,6 +369,7 @@ console.log(smallNumbers)
 >
   HelloWorld
   [ 1, 2, 3, 4, 5 ]  
+
 
 > The .filter() : this method returns an array of elements after filtering out certain elements from the original array.The callback function for the .filter() method should return ***true*** or ***false*** depending on the element that is passed to it. The elements that cause the callback function to return ***true*** are added to the new array.
 
@@ -437,6 +441,7 @@ console.log(startsWithS)
   - 7
   - 3
 
+
 > The .reduce() : The .reduce() method returns a single value after iterating through the elements of an array, thereby reducing the array.
 
 ### Example 
@@ -473,6 +478,7 @@ console.log(newSum);
   - The value of currentValue: 7
   - 16
 
+
 > The .sum() : This method test wether at least one element in the array passes the test implemented by the provided function.
 ```
 const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
@@ -503,8 +509,7 @@ const longCities = cities.filter(city => city.length > 7);
 
 // Choose a method that will return a single value
 const word = cities.reduce((acc, currVal) => {
-  return acc + currVal[0]
-}, "N");
+}, "M");
 
 console.log(word)
 
