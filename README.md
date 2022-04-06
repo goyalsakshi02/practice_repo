@@ -142,7 +142,7 @@ const rectangleArea = (width, height) => {
   return area;
 }; // function returns area 
 ```
-### Example 2
+### Example 2 (reverse a number)
 ```
 const reverseNumFunc = () => {
 let num = 1234
@@ -156,7 +156,7 @@ return reversedNum
 }
 console.log(reverseNumFunc())
 ```
-#### Example 3
+#### Example 3 (No of vowels in a string)
 ```
 const noOfVowels = string => {
   let vowels = 'aAeEiIoOuU'
