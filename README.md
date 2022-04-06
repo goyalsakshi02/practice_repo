@@ -287,11 +287,11 @@ console.log(pastaIndex);
 #### Output
 > ['bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
   
-  ['popcorn','bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
+    ['popcorn','bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
 
-  [ 'bananas','coffee beans', 'brown rice']
+    [ 'bananas','coffee beans', 'brown rice']
 
-  4
+    4
       
 
 - Looping Array Element : Using for loop in an array.
