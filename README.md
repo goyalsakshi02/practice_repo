@@ -285,7 +285,8 @@ const pastaIndex = groceryList.indexOf('pasta');
 console.log(pastaIndex);
 ```
 #### Output
->   ['bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
+>   
+    ['bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
   
     ['popcorn','bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
 
