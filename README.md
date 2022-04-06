@@ -208,17 +208,112 @@ JavaScript has 3 types of scope:
   ```
 the carName variable referred to as Function Scope
   - Global scope : A variable declared outside a function, becomes GLOBAL
-  ```
+```
   let carName = "Volvo";
 // code here can use carName
 
 function myFunction() {
 // code here can also use carName
 }
-
+```
   the global variable can be accesses anywhere in the code.
-### Higher Order Function
+### Arrays 
+An array is a special variable, which can hold more than one value
+```
+const cars = [volvo, swift, Hondacity]
 
+```
+### Use of Array 
+An array can hold a collection of data in a single variable which can be accessed very easily by reffering to an index number.
+Array element can be accessed by reffering to the index number:
+```
+const cars = ["Saab", "Volvo", "BMW"];
+console.log(cars[0]); // output : Saab 
+```
+### Replacing an Element in Array 
+We can replace any element in array with the new value easily 
+```
+const cars = ['swift', 'Hondacity', 'Baleno']
+cars[0] = Nexa
+console.log(cars) // Output : Nexa, Hondacity, Baleno
+```
+### Array properties 
+by built in properties and methods its very easy to access array 
+- The length property : This property returns the length of the array 
+``` 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruits.length;
+console.log(length) // 4
+```
+- Accessing last element of array 
+```
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[fruits.length - 1];
+console.log(fruit) // output : 3
+```
+- Push and Pop : using these properties can easily remove and insert array elements 
+  Example for push : 
+  ```
+  const chores = ['wash dishes', 'do laundry', 'take out trash'];
+  chores.push('item3', 'item4')
+  console.log(chores) // output :  ['wash dishes', 'do laundry', 'take out trash', 'item3','item4']
+  ```
+  Example for Pop :It only remove the last element of the array 
+  ```
+  const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+  chores.pop()
+  console.log(chores) // Output : ['wash dishes', 'do laundry', 'take out trash', 'cook dinner']
+  ```
+  - More inbuilt methods : shift, unshift, slice, indexOff
+   ```
+  const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+  groceryList.shift();
+
+  console.log(groceryList);
+
+  groceryList.unshift('popcorn');
+
+  console.log(groceryList);
+
+  console.log(groceryList.slice(1, 4));
+
+  console.log(groceryList);
+
+  const pastaIndex = groceryList.indexOf('pasta');
+
+  console.log(pastaIndex);
+  ```
+#### Output
+ > ['bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
+  
+   ['popcorn','bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains']
+
+   [ 'bananas','coffee beans', 'brown rice']
+
+   4
+      
+
+- Looping Array Element : Using for loop in an array.
+``` 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const fl = fruits.length
+let text = "<ul>"
+for (i=0; i< flen; i++) {
+text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+console.log(text) 
+```
+#### Output
+>  Banana
+   Orange
+   Apple
+   Mango
+#### Iterators
+
+
+    
 
 
 
